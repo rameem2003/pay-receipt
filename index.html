@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pay Receipt</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        content: ["./src/**/*.{html,js}"],
+        theme: {
+          extend: {
+            colors: {
+              primary: "#949b36cc",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <section class="max-w-[800px] mx-auto py-10">
+      <!-- header start -->
+      <header>
+        <h1 class="font-bold text-2xl text-black">
+          আজিজ খান ডায়াগনস্টিক সেন্টার
+        </h1>
+        <h2 class="font-normal mt-2 text-black">
+          সরকারি হাসপাতাল গেইট সংলগ্ন। ভালুকা পৌরসভা, ময়মনসিংহ।
+        </h2>
+
+        <p class="font-normal text-black">Phone no.: 01761-588184</p>
+        <p class="font-normal text-black">Email: zikokhan16@gmail.com</p>
+      </header>
+      <!-- header end -->
+
+      <!-- main start -->
+      <main class="mt-5">
+        <h2 class="font-bold text-2xl text-center text-primary mb-3">
+          Invoice
+        </h2>
+
+        <div class="flex items-center justify-between">
+          <p class="font-bold text-base text-black">Bill To:</p>
+          <p class="font-bold text-base text-black">Invoice No.: 3</p>
+        </div>
+        <div class="flex items-center justify-between">
+          <p class="font-bold text-base text-black">Ajit Chndra</p>
+          <p class="font-bold text-base text-black">Date: 21-06-2021</p>
+        </div>
+
+        <!-- table start -->
+        <table class="w-full border-separate mt-4">
+          <tr class="bg-primary border border-1">
+            <td class="p-1 font-bold text-base text-white">#</td>
+            <td class="p-1 font-bold text-base text-white">Test Name</td>
+            <td class="p-1 font-bold text-base text-white text-right">
+              Amount
+            </td>
+          </tr>
+
+          <tr class="border border-1">
+            <td class="p-1 font-semibold text-base text-black">1</td>
+            <td class="p-1 font-semibold text-base text-black">Test Name</td>
+            <td class="p-1 font-semibold text-base text-black text-right">
+              ৳ 500.00
+            </td>
+          </tr>
+          <tr class="border border-1">
+            <td class="p-1 font-semibold text-base text-black">1</td>
+            <td class="p-1 font-semibold text-base text-black">Test Name</td>
+            <td class="p-1 font-semibold text-base text-black text-right">
+              ৳ 500.00
+            </td>
+          </tr>
+          <tr class="border border-1">
+            <td class="p-1 font-semibold text-base text-black">1</td>
+            <td class="p-1 font-semibold text-base text-black">Test Name</td>
+            <td class="p-1 font-semibold text-base text-black text-right">
+              ৳ 500.00
+            </td>
+          </tr>
+          <tr class="border border-1">
+            <td class="p-1 font-semibold text-base text-black">1</td>
+            <td class="p-1 font-semibold text-base text-black">Test Name</td>
+            <td class="p-1 font-semibold text-base text-black text-right">
+              ৳ 500.00
+            </td>
+          </tr>
+        </table>
+        <!-- table end -->
+
+        <div
+          class="flex items-center justify-between border-b-[1px] border-t-[1px] border-slate-300 py-1"
+        >
+          <p class="font-bold text-base ml-24">Total</p>
+          <p class="font-bold text-base">৳500.00</p>
+        </div>
+
+        <div class="flex items-start justify-between">
+          <div class="w-1/2 flex items-center justify-center">
+            <img
+              class="w-[300px] h-[300px]"
+              src="./assets/img/qr_code.png"
+              alt="qr code"
+            />
+          </div>
+          <div class="w-1/2">
+            <table class="w-full mt-2 border-b-[1px] border-primary">
+              <tr>
+                <td class="p-1 font-semibold text-base text-black">
+                  Sub Total
+                </td>
+                <td class="p-1 font-semibold text-base text-black text-right">
+                  ৳2900.00
+                </td>
+              </tr>
+              <tr>
+                <td class="p-1 font-semibold text-base text-black">
+                  Discount (30.0%)
+                </td>
+                <td class="p-1 font-semibold text-base text-black text-right">
+                  ৳2900.00
+                </td>
+              </tr>
+
+              <tr class="bg-primary">
+                <td class="p-1 font-semibold text-base text-white">Total</td>
+                <td class="p-1 font-semibold text-base text-white text-right">
+                  ৳2900.00
+                </td>
+              </tr>
+              <tr>
+                <td class="p-1 font-semibold text-base text-black">Received</td>
+                <td class="p-1 font-semibold text-base text-black text-right">
+                  ৳2900.00
+                </td>
+              </tr>
+              <tr>
+                <td class="p-1 font-semibold text-base text-black">Balance</td>
+                <td class="p-1 font-semibold text-base text-black text-right">
+                  ৳2900.00
+                </td>
+              </tr>
+
+              <tr>
+                <td class="p-1 font-semibold text-base text-primary">
+                  You Saved
+                </td>
+                <td class="p-1 font-semibold text-base text-primary text-right">
+                  ৳0.00
+                </td>
+              </tr>
+            </table>
+
+            <p class="font-semibold text-base text-center text-slate-600 mt-8">
+              For, আজিজ খান ডায়াগনস্টিক সেন্টার
+            </p>
+
+            <p class="font-normal text-base text-black text-center mt-[80px]">
+              Authorized Signatory
+            </p>
+          </div>
+        </div>
+      </main>
+      <!-- main end -->
+
+      <!-- footer start -->
+      <footer class="mt-[300px] flex items-end justify-between">
+        <a href="" class="font-bold text-base text-blue-400"
+          >www.vyaparapp.in
+        </a>
+
+        <img src="./assets/img/logo.png" alt="logo" />
+      </footer>
+      <!-- footer end -->
+    </section>
+  </body>
+</html>

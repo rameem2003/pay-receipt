@@ -41,12 +41,16 @@
         </h2>
 
         <div class="flex items-center justify-between">
-          <p class="font-bold text-base text-black">Bill To:</p>
-          <p class="font-bold text-base text-black">Invoice No.: 3</p>
-        </div>
-        <div class="flex items-center justify-between">
-          <p class="font-bold text-base text-black">Ajit Chndra</p>
-          <p class="font-bold text-base text-black">Date: 21-06-2021</p>
+          <div>
+            <p class="font-bold text-base text-black">Patient Name:</p>
+            <p class="font-bold text-base text-black">Age:</p>
+            <p class="font-bold text-base text-black">Contact No.:</p>
+          </div>
+          <div>
+            <p class="font-bold text-base text-black">Invoice ID: xxxx</p>
+            <p class="font-bold text-base text-black">Date: 13th April 2024</p>
+            <p class="font-bold text-base text-black">Referred By: Br. XXX</p>
+          </div>
         </div>
 
         <!-- table start -->
@@ -98,12 +102,17 @@
         </div>
 
         <div class="flex items-start justify-between">
-          <div class="w-1/2 flex items-center justify-center">
+          <div class="w-1/2 flex items-center flex-col">
             <img
-              class="w-[300px] h-[300px]"
+              class="w-[300px] h-[300px] mt-[120px]"
               src="./assets/img/qr_code.png"
               alt="qr code"
             />
+
+            <p class="font-normal text-xl text-center mt-5">
+              টেস্ট রিপোর্ট ডাউনলোড করার জন্য এবং আপডেট করার জন্য এই QR Code টি
+              স্ক্যান করুন
+            </p>
           </div>
           <div class="w-1/2">
             <table class="w-full mt-2 border-b-[1px] border-primary">
@@ -124,54 +133,65 @@
                 </td>
               </tr>
 
+              <tr>
+                <td class="p-1 font-semibold text-base text-black">
+                  After Discount
+                </td>
+                <td class="p-1 font-semibold text-base text-black text-right">
+                  ৳2900.00
+                </td>
+              </tr>
+              <tr>
+                <td class="p-1 font-semibold text-base text-black">
+                  Adjustment
+                </td>
+                <td class="p-1 font-semibold text-base text-black text-right">
+                  ৳2900.00
+                </td>
+              </tr>
               <tr class="bg-primary">
-                <td class="p-1 font-semibold text-base text-white">Total</td>
+                <td class="p-1 font-semibold text-base text-white">
+                  Grand Total
+                </td>
                 <td class="p-1 font-semibold text-base text-white text-right">
-                  ৳2900.00
-                </td>
-              </tr>
-              <tr>
-                <td class="p-1 font-semibold text-base text-black">Received</td>
-                <td class="p-1 font-semibold text-base text-black text-right">
-                  ৳2900.00
-                </td>
-              </tr>
-              <tr>
-                <td class="p-1 font-semibold text-base text-black">Balance</td>
-                <td class="p-1 font-semibold text-base text-black text-right">
                   ৳2900.00
                 </td>
               </tr>
 
               <tr>
                 <td class="p-1 font-semibold text-base text-primary">
-                  You Saved
+                  Received
                 </td>
                 <td class="p-1 font-semibold text-base text-primary text-right">
-                  ৳0.00
+                  ৳2900.00
+                </td>
+              </tr>
+
+              <tr>
+                <td class="p-1 font-semibold text-base text-primary">Due</td>
+                <td class="p-1 font-semibold text-base text-primary text-right">
+                  ৳2900.00
                 </td>
               </tr>
             </table>
-
-            <p class="font-semibold text-base text-center text-slate-600 mt-8">
-              For, আজিজ খান ডায়াগনস্টিক সেন্টার
-            </p>
-
-            <p class="font-normal text-base text-black text-center mt-[80px]">
-              Authorized Signatory
-            </p>
           </div>
+        </div>
+
+        <div
+          class="w-[250px] h-[50px] border-t-[4px] border-black ml-auto mt-[300px]"
+        >
+          <p class="font-semibold text-base text-black text-center">
+            Signature
+          </p>
         </div>
       </main>
       <!-- main end -->
 
       <!-- footer start -->
-      <footer class="mt-[300px] flex items-end justify-between">
-        <a href="" class="font-bold text-base text-blue-400"
-          >www.vyaparapp.in
-        </a>
-
-        <img src="./assets/img/logo.png" alt="logo" />
+      <footer class="mt-[10px] text-center">
+        <p class="font-bold text-base text-slate-400">
+          Managed by <a href="">Lab-Pilot.com</a>
+        </p>
       </footer>
       <!-- footer end -->
     </section>

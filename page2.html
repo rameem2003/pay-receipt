@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page 2</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        content: ["./src/**/*.{html,js}"],
+        theme: {
+          extend: {},
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <section class="max-w-[800px] mx-auto pt-10">
+      <!-- header start -->
+      <header>
+        <div class="flex items-start gap-5">
+          <img class="w-[80px] h-[80px]" src="./assets/img/bsmmu.png" alt="" />
+          <div class="text-center">
+            <h1 class="font-bold text-3xl uppercase">Department of Virology</h1>
+            <h2 class="font-semibold text-2xl uppercase text-red-500">
+              বঙ্গবন্ধু শেখ মুজিব মেডিক্যাল বিশ্ববিদ্যালয়
+            </h2>
+            <h2 class="font-bold text-2xl capitalize text-red-500">
+              Bangabandhu sheikh mujib medical university
+            </h2>
+            <h2 class="font-bold text-2xl capitalize">
+              Shahbag Avenue, Dhaka-1000, Bangladesh
+            </h2>
+          </div>
+          <img
+            class="w-[80px] h-[80px]"
+            src="./assets/img/qr_code.png"
+            alt=""
+          />
+        </div>
+      </header>
+      <!-- header end -->
+
+      <!-- main start -->
+      <main>
+        <div
+          class="border-t-[1px] border-b-[1px] border-black flex items-start justify-between mt-5"
+        >
+          <table>
+            <tr>
+              <td class="font-bold">Patient Name</td>
+              <td>: xxxxxxxxx</td>
+            </tr>
+
+            <tr>
+              <td class="font-bold text-right">Invoice ID</td>
+              <td>: xxxxxxxxxxx</td>
+            </tr>
+          </table>
+
+          <table>
+            <tr>
+              <td class="font-bold">Age</td>
+              <td>: xxxxxxxxx</td>
+            </tr>
+
+            <tr>
+              <td class="font-bold text-right">Invoice Date</td>
+              <td>: 01 Jan 2024</td>
+            </tr>
+          </table>
+
+          <table>
+            <tr>
+              <td class="font-bold">Contact No</td>
+              <td>: xxxxxxxxx</td>
+            </tr>
+
+            <tr>
+              <td class="font-bold text-right">Delivary Date</td>
+              <td>: 01 Jan 2024</td>
+            </tr>
+          </table>
+        </div>
+
+        <h2 class="font-bold text-xl text-center uppercase">
+          patient laboratory report
+        </h2>
+
+        <table class="w-full mt-3">
+          <tr class="border border-1">
+            <td class="font-bold text-xl w-[20%] border-[1px] border-black">
+              Test
+            </td>
+            <td class="font-bold text-xl w-[20%] border-[1px] border-black">
+              Method
+            </td>
+            <td class="font-bold text-xl w-[20%] border-[1px] border-black">
+              Cut off
+            </td>
+
+            <td class="font-bold text-xl w-[10%] border-[1px] border-black">
+              Test OD
+            </td>
+
+            <td
+              class="font-bold text-xl w-[20%] border-[1px] border-black text-center"
+            >
+              Index Value / Titer
+            </td>
+
+            <td class="font-bold text-xl w-[10%] border-[1px] border-black">
+              Result
+            </td>
+          </tr>
+
+          <tr class="border-b-[1px] border-black">
+            <td>HBsAg</td>
+            <td>Elisa</td>
+            <td>0.1250</td>
+            <td>0.0440</td>
+            <td></td>
+            <td>Nagative</td>
+          </tr>
+        </table>
+        <p class="font-bold text-lg">
+          Advice: Hepatities-B Virus Vaccination is recommended
+        </p>
+
+        <table class="w-full">
+          <tr class="border-b-[1px] border-t-[1px] border-black">
+            <td>HBsAg</td>
+            <td>Elisa</td>
+            <td>0.1250</td>
+            <td>0.0440</td>
+            <td></td>
+            <td>Nagative</td>
+          </tr>
+        </table>
+      </main>
+      <!-- main end -->
+
+      <!-- footer start -->
+      <footer class="mt-[150px]">
+        <div class="flex items-end justify-between">
+          <div>
+            <img
+              class="w-[180px] h-[180px] mb-4"
+              src="./assets/img/qr_code.png"
+              alt="qrcode"
+            />
+            <p class="font-bold">Printed no: 01 Jan 2024</p>
+            <p class="font-bold">Managed by <a href="">Lab-Pilot.com</a></p>
+          </div>
+
+          <div>
+            <div class="border-t-[2px] border-black w-[150px]">
+              <p class="font-semibold text-center text-base">Signature</p>
+            </div>
+          </div>
+        </div>
+
+        <p class="p-3 bg-orange-500 font-bold text-lg text-center mt-10">
+          BSMMU OPD-2, Shahbag, Dhaka-1000, Bangladesh
+        </p>
+      </footer>
+      <!-- footer end -->
+    </section>
+  </body>
+</html>

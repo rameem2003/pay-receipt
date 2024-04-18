@@ -15,7 +15,7 @@
     </script>
   </head>
   <body>
-    <section class="max-w-[800px] mx-auto pt-10">
+    <section class="max-w-[800px] mx-auto pt-10 min-h-screen px-2 relative">
       <!-- header start -->
       <header>
         <div class="flex items-start gap-5">
@@ -44,7 +44,7 @@
       <!-- main start -->
       <main>
         <div
-          class="border-t-[1px] border-b-[1px] border-black flex items-start justify-between mt-5"
+          class="border-[1px] border-black flex items-start justify-between mt-5"
         >
           <table>
             <tr>
@@ -87,31 +87,19 @@
           patient laboratory report
         </h2>
 
-        <table class="w-full mt-3">
-          <tr class="border border-1">
-            <td class="font-bold text-xl w-[20%] border-[1px] border-black">
-              Test
-            </td>
-            <td class="font-bold text-xl w-[20%] border-[1px] border-black">
-              Method
-            </td>
-            <td class="font-bold text-xl w-[20%] border-[1px] border-black">
-              Cut off
-            </td>
+        <table class="w-full mt-3 border border-1 border-black">
+          <tr>
+            <td class="font-bold text-xl w-[20%] border-black">Test</td>
+            <td class="font-bold text-xl w-[20%] border-black">Method</td>
+            <td class="font-bold text-xl w-[20%] border-black">Cut off</td>
 
-            <td class="font-bold text-xl w-[10%] border-[1px] border-black">
-              Test OD
-            </td>
+            <td class="font-bold text-xl w-[10%] border-black">Test OD</td>
 
-            <td
-              class="font-bold text-xl w-[20%] border-[1px] border-black text-center"
-            >
+            <td class="font-bold text-xl w-[20%] border-black text-center">
               Index Value / Titer
             </td>
 
-            <td class="font-bold text-xl w-[10%] border-[1px] border-black">
-              Result
-            </td>
+            <td class="font-bold text-xl w-[10%] border-black">Result</td>
           </tr>
 
           <tr class="border-b-[1px] border-black">
@@ -119,7 +107,7 @@
             <td>Elisa</td>
             <td>0.1250</td>
             <td>0.0440</td>
-            <td></td>
+            <td>xxxx</td>
             <td>Nagative</td>
           </tr>
         </table>
@@ -127,8 +115,8 @@
           Advice: Hepatities-B Virus Vaccination is recommended
         </p>
 
-        <table class="w-full">
-          <tr class="border-b-[1px] border-t-[1px] border-black">
+        <table class="w-full border-[1px] border-black">
+          <tr class="">
             <td>HBsAg</td>
             <td>Elisa</td>
             <td>0.1250</td>
@@ -141,7 +129,7 @@
       <!-- main end -->
 
       <!-- footer start -->
-      <footer class="mt-[150px]">
+      <footer class="mt-[150px] absolute bottom-0 left-0 w-full">
         <div class="flex items-end justify-between">
           <div>
             <img
